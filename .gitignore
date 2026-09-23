@@ -1,0 +1,46 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.venv/
+venv/
+env/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Secrets / env
+.env
+.env.local
+*.pem
+*.key
+
+# ML artifacts (generated locally)
+artifacts/*
+!artifacts/.gitkeep
+mlruns/
+wandb/
+*.joblib
+*.pkl
+
+# Data dumps
+data/raw/
+data/processed/
+*.parquet
+*.h5

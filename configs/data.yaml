@@ -1,0 +1,16 @@
+source: synthetic  # synthetic | real
+synthetic:
+  n_samples: 500
+  n_features: 8
+  n_informative: 5
+  n_classes: 2
+  class_sep: 1.2
+  random_state: 42
+  output_path: artifacts/data/synthetic.csv
+real:
+  # Path used when source: real (implement RealDataLoader)
+  path: data/raw/real.csv
+  target_column: target
+split:
+  test_size: 0.2
+  random_state: 42

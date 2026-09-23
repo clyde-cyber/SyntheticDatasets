@@ -1,0 +1,17 @@
+data_config: configs/data.yaml
+model:
+  name: logistic_regression  # logistic_regression | random_forest
+  params:
+    max_iter: 500
+    C: 1.0
+    random_state: 42
+features:
+  scale: true
+  select_k: null
+artifacts:
+  model_dir: artifacts/models/latest
+  metrics_path: artifacts/metrics/train_metrics.json
+tuning:
+  enabled: false
+  n_iter: 10
+  cv: 3
